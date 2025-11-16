@@ -71,7 +71,7 @@ button {
 }
 
 button:hover {
-    background: black;
+    background: rgb(62, 0, 0);
 }
 
 /* ===== FOOTER ===== */
@@ -97,6 +97,12 @@ footer {
   border-radius: 6px;
   flex: 1;
 }
+.project1:hover, .project2:hover, .project3:hover{
+h3{
+    color: rgb(80, 2, 2);
+}
+  background-color: #c0c0c0;
+}
 #contact form{
   width: 50%;
   margin: auto;
@@ -107,7 +113,7 @@ form{
     border: black 1px solid;
     border-radius: 20px;
 }
-a.hover{
+a:hover{
     color: red;
 }
 
@@ -115,4 +121,13 @@ a.hover{
     font-size: 1.2rem;
     text-align: center;
     margin-top: 10px;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
 }
