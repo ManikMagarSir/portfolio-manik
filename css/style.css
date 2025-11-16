@@ -1,0 +1,118 @@
+/* ===== BASIC RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BASE STYLES ===== */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f5f5;
+    color: #333;
+    padding: 20px;
+}
+
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    padding: 30px 0;
+    background: #222;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* ===== NAVIGATION ===== */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #444;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===== MAIN CONTENT SECTIONS ===== */
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+/* ===== FORM ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: black;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background: #222;
+    color: white;
+    border-radius: 6px;
+}
+
+.proj{
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  width: 100%;
+  height: max-content;
+}
+.project1, .project2, .project3{
+  background-color: #e0e0e0;
+  padding: 15px;
+  border-radius: 6px;
+  flex: 1;
+}
+#contact form{
+  width: 50%;
+  margin: auto;
+}
+form{
+    background-color: rgb(230, 230, 230);
+    padding: 40px;
+    border: black 1px solid;
+    border-radius: 20px;
+}
+a.hover{
+    color: red;
+}
+
+#about p{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+}
