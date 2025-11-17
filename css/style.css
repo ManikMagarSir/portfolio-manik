@@ -1,11 +1,8 @@
-/* ===== BASIC RESET ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* ===== BASE STYLES ===== */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,8 +10,6 @@ body {
     color: #333;
     padding: 20px;
 }
-
-/* ===== HEADER ===== */
 header {
     text-align: center;
     padding: 30px 0;
@@ -22,8 +17,6 @@ header {
     color: white;
     margin-bottom: 20px;
 }
-
-/* ===== NAVIGATION ===== */
 nav ul {
     list-style: none;
     display: flex;
@@ -38,16 +31,12 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
-
-/* ===== MAIN CONTENT SECTIONS ===== */
 section {
     background: white;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 6px;
 }
-
-/* ===== FORM ===== */
 form {
     display: flex;
     flex-direction: column;
@@ -73,8 +62,6 @@ button {
 button:hover {
     background: rgb(62, 0, 0);
 }
-
-/* ===== FOOTER ===== */
 footer {
     text-align: center;
     padding: 15px;
