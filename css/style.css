@@ -26,7 +26,9 @@ nav ul {
     background: #444;
     padding: 15px;
 }
-
+h2{
+    margin-bottom: 30px;
+}
 nav a {
     color: white;
     text-decoration: none;
@@ -88,17 +90,12 @@ footer {
   width: 100%;
   height: max-content;
 }
-.project1, .project2, .project3{
-  background-color: #e0e0e0;
-  padding: 15px;
-  border-radius: 6px;
-  flex: 1;
-  text-align: center;
-  transition: transform ease-in-out 3s;
-}
 #contact form{
   width: 400px;
   margin: auto;
+}
+a{
+    transition: color ease-in-out 0.3s;
 }
 a:hover{
     color: red;
@@ -117,6 +114,22 @@ a:hover{
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    border: black 2px solid;
+    margin-top: 10px;
+    box-shadow: 0 0 40px 15px rgba(0, 247, 255, 0.35);
+    transition: transform ease-in-out 0.3s;
+}
+
+#about img:hover{
+    transform: scale(1.05);
+}
+.project1, .project2, .project3{
+  background-color: #e0e0e0;
+  padding: 15px;
+  border-radius: 6px;
+  flex: 1;
+  text-align: center;
+  transition: background ease-in-out 0.3s;
 }
 
 .project1 img, .project2 img, .project3 img{
@@ -124,19 +137,21 @@ a:hover{
     height: auto;
     margin: auto;
     border-radius: 6px;
+    transition: transform ease-in-out 0.3s;
 }
 .project1 h3, .project2 h3, .project3 h3{
     margin-bottom: 10px;
     text-align: center;
+    transition: color ease-in-out 0.3s;;
+    
 }
 
 .project1:hover, .project2:hover, .project3:hover{
     h3{
-    color: rgb(80, 2, 2);
+    color: rgb(83, 0, 0);
     }
-  background-color: #c0c0c0;
+    background: #c0c0c0;
     img{
         transform: scale(1.05);
     }
-    transition: transform ease-in-out 0.3s;
 }
