@@ -9,6 +9,7 @@ body {
     background: #f5f5f5;
     color: #333;
     padding: 20px;
+    text-align: center;
 }
 header {
     text-align: center;
@@ -41,6 +42,11 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    justify-content: center;
+    background-color: rgb(230, 230, 230);
+    padding: 40px;
+    border: black 1px solid;
+    border-radius: 20px;
 }
 
 input, textarea {
@@ -49,18 +55,22 @@ input, textarea {
     border-radius: 4px;
     font-size: 1rem;
 }
-
+input[type="text"], input[type="email"], textarea {
+    width: 300px;
+}
 button {
+    width: 300px;
     padding: 10px;
     background: #333;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background ease 0.3s;
 }
 
 button:hover {
-    background: rgb(62, 0, 0);
+    background: rgb(95, 95, 95);
 }
 footer {
     text-align: center;
@@ -83,22 +93,12 @@ footer {
   padding: 15px;
   border-radius: 6px;
   flex: 1;
-}
-.project1:hover, .project2:hover, .project3:hover{
-h3{
-    color: rgb(80, 2, 2);
-}
-  background-color: #c0c0c0;
+  text-align: center;
+  transition: transform ease-in-out 3s;
 }
 #contact form{
-  width: 50%;
+  width: 400px;
   margin: auto;
-}
-form{
-    background-color: rgb(230, 230, 230);
-    padding: 40px;
-    border: black 1px solid;
-    border-radius: 20px;
 }
 a:hover{
     color: red;
@@ -110,11 +110,33 @@ a:hover{
     margin-top: 10px;
 }
 
-img{
+#about img{
     display: block;
     margin: auto;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.project1 img, .project2 img, .project3 img{
+    width: 100px;
+    height: auto;
+    margin: auto;
+    border-radius: 6px;
+}
+.project1 h3, .project2 h3, .project3 h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.project1:hover, .project2:hover, .project3:hover{
+    h3{
+    color: rgb(80, 2, 2);
+    }
+  background-color: #c0c0c0;
+    img{
+        transform: scale(1.05);
+    }
+    transition: transform ease-in-out 0.3s;
 }
