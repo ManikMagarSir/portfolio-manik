@@ -6,8 +6,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: #f5f5f5;
-    color: #333;
+    background: #000000;
+    color: #ffffff;
     padding: 20px;
     text-align: center;
 }
@@ -16,7 +16,6 @@ header {
     padding: 30px 0;
     background: #222;
     color: white;
-    margin-bottom: 20px;
 }
 nav ul {
     list-style: none;
@@ -35,7 +34,6 @@ nav a {
     font-weight: bold;
 }
 section {
-    background: white;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 6px;
@@ -45,15 +43,18 @@ form {
     flex-direction: column;
     gap: 10px;
     justify-content: center;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(78, 78, 78);
     padding: 40px;
     border: black 1px solid;
     border-radius: 20px;
+    text-align: left;
+    font-weight: bold;
 }
 
 input, textarea {
+    background: #8a8a8a;
     padding: 10px;
-    border: 1px solid #bbb;
+    border: 1px solid #000000;
     border-radius: 4px;
     font-size: 1rem;
 }
@@ -63,16 +64,16 @@ input[type="text"], input[type="email"], textarea {
 button {
     width: 300px;
     padding: 10px;
-    background: #333;
+    background: #460000;
     color: white;
-    border: none;
+    border: black 1px solid;
     border-radius: 4px;
     cursor: pointer;
     transition: background ease 0.3s;
 }
 
 button:hover {
-    background: rgb(95, 95, 95);
+    background: rgb(126, 1, 1);
 }
 footer {
     text-align: center;
@@ -89,10 +90,6 @@ footer {
   flex-direction: row;
   width: 100%;
   height: max-content;
-}
-#contact form{
-  width: 400px;
-  margin: auto;
 }
 a{
     transition: color ease-in-out 0.3s;
@@ -116,7 +113,7 @@ a:hover{
     object-fit: cover;
     border: black 2px solid;
     margin-top: 10px;
-    box-shadow: 0 0 40px 15px rgba(0, 247, 255, 0.35);
+    box-shadow: 0 0 40px 15px rgba(255, 0, 0, 0.35);
     transition: transform ease-in-out 0.3s;
 }
 
@@ -124,12 +121,13 @@ a:hover{
     transform: scale(1.05);
 }
 .project1, .project2, .project3{
-  background-color: #e0e0e0;
+  background-color: #3a3a3a;
+  color: beige;
   padding: 15px;
   border-radius: 6px;
   flex: 1;
   text-align: center;
-  transition: background ease-in-out 0.3s;
+  transition: background ease-in-out 0.3s, box-shadow ease-in-out 0.3s;
 }
 
 .project1 img, .project2 img, .project3 img{
@@ -142,16 +140,55 @@ a:hover{
 .project1 h3, .project2 h3, .project3 h3{
     margin-bottom: 10px;
     text-align: center;
-    transition: color ease-in-out 0.3s;;
+    transition: color ease-in-out 0.3s, font-size ease-in-out 0.3s;
     
 }
 
 .project1:hover, .project2:hover, .project3:hover{
     h3{
-    color: rgb(83, 0, 0);
+    color: rgb(62, 0, 0);
+    font-size: 30px;
     }
-    background: #c0c0c0;
+    p{
+        color: black;
+    }
+    box-shadow: 0 0 40px #ff0000;
+    background: #c9c9c9;
     img{
         transform: scale(1.05);
     }
+}
+.hehe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly
+}
+#contact img{
+    width: 200px;
+}
+#contact form{
+  width: 400px;
+}
+
+.hehe aside{
+    height: 330px;
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hehe aside img{
+    margin-top: 10px;
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border: black 2px solid;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
 }
